@@ -8,7 +8,10 @@ This first use case is useful when you want to collaborate to an existing projec
 . Go to the DGIWG project/repository you want to work on
 . Fork the project to your account, so you have your own version
 . Clone on your machine your version.
-
+. Edit file
+. Save file
+. Commit locally
+. push to Fork
 
 == Working on a new project
 
