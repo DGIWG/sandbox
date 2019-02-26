@@ -12,7 +12,7 @@ This first use case is useful when you want to collaborate to an existing projec
 * Edit file.
 * Save file.
 * Commit locally.
-* push to Fork.
+* Push to Fork.
 
 
 == Working on a new project
