@@ -13,6 +13,7 @@ This first use case is useful when you want to collaborate to an existing projec
 * Save file.
 * Commit locally.
 * Push to Fork.
+Idealy, a branch is used.
 
 
 == Working on a new project
