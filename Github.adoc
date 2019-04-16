@@ -20,3 +20,4 @@ How to create a new project?
 
 
 == GitHub Flow
+http://1.bp.blogspot.com/-n8gwrM5Bf04/UfosDLuuDUI/AAAAAAAAKwg/2aE3V0NDk-g/s1600/git-and-github-workflow.png[Github Flow]
