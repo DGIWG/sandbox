@@ -17,6 +17,7 @@ This first use case is useful when you want to collaborate to an existing projec
 
 == Working on a new project
 How to create a new project?
+The easiest is to use the Github UI to create a new project.
 
 
 == GitHub Flow
