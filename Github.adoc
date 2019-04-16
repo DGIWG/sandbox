@@ -19,6 +19,7 @@ Idealy, a branch is used.
 == Working on a new project
 How to create a new project?
 The easiest is to use the Github UI to create a new project.
+You can also use the command line.
 
 
 == GitHub Flow
