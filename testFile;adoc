@@ -1,0 +1,41 @@
+:caution-caption: :Test File:
+
+== Introduction to GitHub
+GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+== Working on an existing repository
+This first use case is useful when you want to collaborate to an existing project. That is the case for the DGIWG activity. In this case, the workflow is
+
+* Go to the DGIWG project/repository you want to work on (for example https://github.com/DGIWG/sandbox)
+* Fork the project to your account, so you have your own version.
+
+* Clone on your machine your version of the repository (your fork that looks like https://github.com/yourNames/sandbox). This may be done with github desktop tool.
+
+=> this will create a copy of your repository on you local hard drive.
+
+* Edit file locally (for example with Atom editor tool, check "Recommended Asciidoc Environment" on https://portal.opengeospatial.org/files/?artifact_id=73351 for installing the tool and related plugins)
+* Save file locally (still with the text editor)
+* Commit locally (for example with github desktop)
+* Push to Fork (for example with github desktop)
+
+=> this will push your local changes to your own branch of the repository (https://github.com/yourName/sandbox)
+
+
+== Pulling changes from your branch
+* create a new pull request (from your own fork on github.com, for example https://github.com/yourName/sandbox)
+
+=> this pull request has then to be discussed and accepted by admin of the DGIWG repo (https://github.com/DGIWG/sandbox)
+
+* once your pull request has been accepted by the DGIWG repo, you just need to synchronize your branch again with it by (with Github desktop for example)
+  - comparing your local copy to the DGIWG branch https://github.com/DGIWG/sandbox)
+  - make a merge (this will update your local clone of your own repository), then your local Copy = the DGIWG online repo (https://github.com/DGIWG/sandbox)
+  - push it to the origin (this will update your online copy https://github.com/yourName/sandbox), then https://github.com/yourName/sandbox = https://github.com/DGIWG/sandbox
+
+
+== Working on a new project
+How to create a new project?
+The easiest is to use the Github UI to create a new project.
+You can also use the command line.
+
+== GitHub Flow
+http://1.bp.blogspot.com/-n8gwrM5Bf04/UfosDLuuDUI/AAAAAAAAKwg/2aE3V0NDk-g/s1600/git-and-github-workflow.png[Github Flow]
