@@ -8,6 +8,7 @@ This first use case is useful when you want to collaborate to an existing projec
 
 * Go to the DGIWG project/repository you want to work on (for example https://github.com/DGIWG/sandbox)
 * Fork the project to your account, so you have your own version.
+
 * Clone on your machine your version of the repository (your fork that looks like https://github.com/yourNames/sandbox). This may be done with github desktop tool.
 
 => this will create a copy of your repository on you local hard drive.
@@ -30,4 +31,11 @@ This first use case is useful when you want to collaborate to an existing projec
   - make a merge (this will update your local clone of your own repository), then your local Copy = the DGIWG online repo (https://github.com/DGIWG/sandbox)
   - push it to the origin (this will update your online copy https://github.com/yourName/sandbox), then https://github.com/yourName/sandbox = https://github.com/DGIWG/sandbox
 
+
+== Working on a new project
+How to create a new project?
+The easiest is to use the Github UI to create a new project.
+You can also use the command line.
+
 == GitHub Flow
+http://1.bp.blogspot.com/-n8gwrM5Bf04/UfosDLuuDUI/AAAAAAAAKwg/2aE3V0NDk-g/s1600/git-and-github-workflow.png[Github Flow]
