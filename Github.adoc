@@ -1,7 +1,28 @@
 :caution-caption: :Draft work:
 
+= Working with GitHub : DGIWG how to
+
 == Introduction to GitHub
-GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects.
+
+== Required tools
+This chapter is inspirated from some OGC guidelines to develop OGC reports (https://portal.opengeospatial.org/files/?artifact_id=73351)
+
+A *web browser* is required to access https://github.com/ web site (account creation, forking repository ...)
+
+*GitHub desktop software* is recommend to manage GitHub resources. It provides a graphic interface to clone, merge, pull...resources). Git with command lines may also be used.
+
+A *text editor* is required to edit text locally;  Atom software is recommended, but other text editors may be used. Asciidoctor in combination of Atom is recommended for HTML and PDF generation.
+Followings Atom packages are useful:
+
+- asciidoc-preview
+- autocomplete-asciidoc
+- language-asciidoc
+- markdown-writer: requires changing of key-map to allow for keyboard shortcuts such as e.g. bold
+- platformio-IDE-terminal
+
+This environment allows you to use keyboard shortcuts, autocomplete, syntax highlighting and a rendered preview for asciidoc; and provides you an terminal window within the editor to convert your asciidoc to html and pdf
+
 
 == Working on an existing repository
 This first use case is useful when you want to collaborate to an existing project. That is the case for the DGIWG activity. In this case, the workflow is
