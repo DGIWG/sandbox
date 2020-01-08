@@ -1,0 +1,91 @@
+
+:caution-caption: :Draft work:
+= DGIWG GitHub report
+
+== Introduction
+
+=== Context
+OGC is using GitHub tools for developing standards and testbeds reports. This process has several advantages:
+
+- a unique gold copy of the document (and other resources like schemas)
+- version control of the resources
+- focus on the content and not on the look of the document (also avoid errors in references, text styles, numbering, ...)
+- easy contribution and merge of the comments/contributions with full traceability
+
+Associated to asciidoc text format, PDFs or HTMLs can be generated quite easily for document publication.
+
+_PS : the NGA also develops its own profiles on Github (https://github.com/ngageoint/)._
+
+=== Aim
+DGIWG management team agreed on a one year experiment period for the P5-05 project (Web Processing Services). A DGIWG experimentation has then been run in 2019 to investigate use of GitHub tools for helping the process development of DGIWG standards.
+
+
+== Experimentation description
+
+=== GitHub setup
+DGIWG organization has been created on GitHub website https://github.com/DGIWG/. This allows creation of open repositories for DGIWG projects. Concerning the DGIWG experiment, the WPS test has been run under https://github.com/DGIWG/P5.05-WPS.
+
+.DGIWG P5.05-WPS repository
+image::./images/P5.05.png[P5.05_repository,align=center]
+
+NOTE: the experiment has been run on a voluntary base; usual contributions/comments to the document have also been accepted during the process.
+
+=== Tutorial
+Git/GitHub tutorial has been created to present to the DGIWG WSTP experts and more globally to DGIWG members during side sessions and DGIWG TP plenary https://portal.dgiwg.org/files/?artifact_id=69392.
+
+A test repository (sandbox) has been created to help volunteers to play with it before contributing to the project (https://github.com/DGIWG/sandbox). A "step by step" GitHub document has also been created for this purpose (see Annex A); it also describes required and recommended tools to be used.
+
+=== Document template
+First draft of DGIWG template document has been generated for testing purposes https://github.com/DGIWG/Management/tree/master/Templates. This template provides an empty standard document (AsciiDoc format) with same structure and close look and feel as current DGIWG word template for DGIWG standards.
+
+.DGIWG AsciiDoc standard template
+image::./images/std_template.png[std_template,align=center]
+
+=== Standard development
+P5.05 group has setup a dedicated repository https://github.com/DGIWG/P5.05-WPS which contains two main subfolders for:
+
+- a profile of WPS 2.0
+- geospatial processes description (intervisibility, line of sight, routing, ...).
+
+Contributions have been made on each expert clone of the repository before submitting pull request to the DGIWG repository.
+
+.GitHub comparison during the pull request process
+image::./images/pull_request.png[pull_request,align=center]
+
+Each of these two documents follow the previous defined template. command lines allow easy generation of PDF or HTML documents.
+
+WARNING: insert github workflow
+
+Draft documents have been generated to allow easier reading and commenting.
+
+.DGIWG HTML rendering from the current draft template
+image::./images/html_output.png[html_output,align=center]
+
+
+== Feedback
+=== Advantages
+
+1. installed tools allow easy offline editing, contributions before meetings
+2. merging contributions is an easy step and is managed by github.com web site (pull requests). Differences (additions, deletions...) are highlighted, discussions during meetings or teleconferences becomes easier.
+3. managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is done as hen exchanging a word document between people/different Office version).
+NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with care leads to some mistakes, error references in some DGIWG published documents).
+
+4. using same technologies as OGC may also be an advantage for DGIWG when profiling OGC standards (of interest for Web services and upcoming OGC APIs). This also can been as an advantage for nations aiming at developing national profile based upon DGGIWG standards.
+5. becoming friendly with the tools and the DGIWG proposed workflow requires only a few hours.
+
+=== Things to be checked
+1. Tools installation (see <<Annex>>)
+2. Access to https://github.com/ (only for specific tasks)
+
+=== Recommendations and way forward
+
+1. *Continue P5.05 experiment* and finalize it with GitHub tools
+2. *Finalize DGIGW documents template* (+ CSS)
+3. *Review all resources* to support using GitHub for DGIWG
+4. *Extend experiment to other DGIWG panel(s)* (volunteers ?) to gather wider feedback
+5. *Setup management rights* on https://github.com/DGIWG/
+6. *Continue following OGC investigations* (GitHub/GitLab) and questions about private vs open repositories.
+
+== Annex
+
+include::Github.adoc[]
