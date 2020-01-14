@@ -47,7 +47,10 @@ P5.05 group has setup a dedicated repository https://github.com/DGIWG/P5.05-WPS 
 - a profile of WPS 2.0
 - geospatial processes description (intervisibility, line of sight, routing, ...).
 
-Contributions have been made on each expert clone of the repository before submitting pull request to the DGIWG repository.
+.Edition of documents
+image::./images/atom_edition.png[atom_edition,align=center]
+
+Contributions (with text editor Atom) have been made on each expert clone of the repository before submitting pull request to the DGIWG repository.
 
 .GitHub comparison during the pull request process
 image::./images/pull_request.png[pull_request,align=center]
@@ -61,6 +64,13 @@ Draft documents have been generated to allow easier reading and commenting.
 .DGIWG HTML rendering from the current draft template
 image::./images/html_output.png[html_output,align=center]
 
+=== and what about GitLab ?
+GitLab is another Git-based repository, offering more or less the same functionalities as GitHub. One of the main difference is that GitLab private repositories are free (public repositories are charged), whereas GitHub offers the opposite (public is free, private is charged).
+OGC has then investigated use of GitLab and now (announced the 14th of January 2020) offers its own flavor on https://gitlab.ogc.org/. OGC procedure is simple, "*Private Repos = GitLab  /  Public Repos = GitHub*". the process development is the same.
+DGIWG P5 has created the DGIWG group under GitLab, but its use has not been investigated yet.
+
+.DGIWG Group created under GitLab
+image::./images/dgiwg_gitlab.png[dgiwg_gitlab,align=center]
 
 == Feedback
 === Advantages
@@ -80,12 +90,16 @@ NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with
 === Recommendations and way forward
 
 1. *Continue P5.05 experiment* and finalize it with GitHub tools
-2. *Finalize DGIGW documents template* (+ CSS)
+2. *Finalize DGIGW documents template in asciidoc* (+ CSS)
 3. *Review all resources* to support using GitHub for DGIWG
 4. *Extend experiment to other DGIWG panel(s)* (volunteers ?) to gather wider feedback
 5. *Setup management rights* on https://github.com/DGIWG/
-6. *Continue following OGC investigations* (GitHub/GitLab) and questions about private vs open repositories.
+6. *Start investigation of GitLab* in line with OGC process
 
-== Annex
+== Annex A
+.DGIWG simple flow for standard developpment under GitHub
+image::./images/dgiwg_flow.png[dgiwg_flow,align=center]
+
+== Annex B
 
 include::Github.adoc[]
