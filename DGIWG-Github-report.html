@@ -10,9 +10,10 @@
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>DGIWG GitHub report</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
+<ul class="sectlevel0">
+<li><a href="#_dgiwg_github_report">DGIWG GitHub report</a>
 <ul class="sectlevel1">
 <li><a href="#_introduction">1. Introduction</a>
 <ul class="sectlevel2">
@@ -38,12 +39,14 @@
 </li>
 <li><a href="#_annex_a">4. Annex A</a></li>
 <li><a href="#_annex_b">5. Annex B</a></li>
+</ul>
+</li>
 <li><a href="#_working_with_github_dgiwg_how_to">Working with GitHub : DGIWG how to</a>
 <ul class="sectlevel1">
 <li><a href="#_introduction_to_github">6. Introduction to GitHub</a></li>
 <li><a href="#_required_tools">7. Required tools</a></li>
 <li><a href="#_working_on_an_existing_repository">8. Working on an existing repository</a></li>
-<li><a href="#_pulling_changes_from_your_branch">9. Pulling changes from your branch</a></li>
+<li><a href="#_pulling_changes_from_your_fork">9. Pulling changes from your fork</a></li>
 <li><a href="#_working_on_a_new_project">10. Working on a new project</a></li>
 <li><a href="#_github_flow">11. GitHub Flow</a></li>
 </ul>
@@ -52,6 +55,72 @@
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/DGIWG_logo.png" alt="DGIWG Logo" width="200" height="200">
+</div>
+</div>
+</div>
+</div>
+<h1 id="_dgiwg_github_report" class="sect0 text-center"><a class="anchor" href="#_dgiwg_github_report"></a>DGIWG GitHub report</h1>
+<div class="openblock partintro">
+<div class="content">
+<table id="front_page" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22.7272%;">
+<col style="width: 77.2728%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Document type:</th>
+<th class="tableblock halign-left valign-top">Technical Report</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document date:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21 January 2020</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edition number:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.1.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Responsible Party:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Editor :</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dimitri Sarafinof</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Audience:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG participants and associates</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abstract:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This document describes the GitHub experimentation ran by DGIWG WSTP about using GitHub tools within the DGIWG specific standardization process.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copyright:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#169; Copyright DGIWG, some rights reserved  -  (CC) (By:) Attribution
+You are free:
+-	to copy, distribute, display, and perform/execute the work
+-	to make derivative works
+-	to make commercial use of the work
+Under the following conditions:
+-	(By:) Attribution. You must give the original author (DGIWG) credit.
+-	For any reuse or distribution, you must make clear to others the license terms of this work.
+Any of these conditions can be waived if you get permission from the copyright holder DGIWG.
+Your fair use and other rights are in no way affected by the above.
+This is a human-readable summary of the Legal Code (the full license is available from Creative Commons &lt;<a href="http://creativecommons.org/licenses/by/2.0/" class="bare">http://creativecommons.org/licenses/by/2.0/</a> &gt;).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
@@ -170,22 +239,7 @@ the experiment has been run on a voluntary base; usual contributions/comments to
 <div class="title">Figure 4. GitHub comparison during the pull request process</div>
 </div>
 <div class="paragraph">
-<p>Each of these two documents follow the previous defined template. command lines allow easy generation of PDF or HTML documents.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Warning</div>
-</td>
-<td class="content">
-insert github workflow
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Draft documents have been generated to allow easier reading and commenting.</p>
+<p>Each of these two documents follow the previous defined template. Command lines allow easy generation of PDF or HTML documents (draft documents have been generated to allow easier reading and commenting).</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -224,7 +278,7 @@ DGIWG P5 has created the DGIWG group under GitLab, but its use has not been inve
 <p>merging contributions is an easy step and is managed by github.com web site (pull requests). Differences (additions, deletions&#8230;&#8203;) are highlighted, discussions during meetings or teleconferences becomes easier.</p>
 </li>
 <li>
-<p>managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is done as hen exchanging a word document between people/different Office version).
+<p>managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is done as when exchanging a word document between people/different Office version or languages).
 NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with care leads to some mistakes, error references in some DGIWG published documents).</p>
 </li>
 <li>
@@ -283,7 +337,7 @@ NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with
 <div class="content">
 <img src="./images/dgiwg_flow.png" alt="dgiwg_flow">
 </div>
-<div class="title">Figure 7. DGIWG simple flow for standard developpment under GitHub</div>
+<div class="title">Figure 7. DGIWG simple flow for standard development under GitHub</div>
 </div>
 </div>
 </div>
@@ -340,6 +394,9 @@ Followings Atom packages are useful:</p>
 <div class="paragraph">
 <p>This environment allows you to use keyboard shortcuts, autocomplete, syntax highlighting and a rendered preview for asciidoc; and provides you an terminal window within the editor to convert your asciidoc to html and pdf</p>
 </div>
+<div class="paragraph">
+<p>Although GitHub an be used anonymously, a GitHub user account is required to interact with the platform and to be able to fork repositories. GitHub is free for public repositories.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -357,7 +414,7 @@ Followings Atom packages are useful:</p>
 <p>Fork the project to your account, so you have your own version.</p>
 </li>
 <li>
-<p>Clone on your machine your version of the repository (your fork that looks like <a href="https://github.com/yourNames/sandbox" class="bare">https://github.com/yourNames/sandbox</a>). This may be done with github desktop tool.</p>
+<p>Clone on your machine your version of the repository (your fork that looks like <a href="https://github.com/yourNames/sandbox" class="bare">https://github.com/yourNames/sandbox</a>). This may be done with <a href="https://desktop.GitHub.com/">GitHub desktop tool</a>.</p>
 </li>
 </ul>
 </div>
@@ -367,31 +424,31 @@ Followings Atom packages are useful:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Edit file locally (for example with Atom editor tool, check "Recommended Asciidoc Environment" on <a href="https://portal.opengeospatial.org/files/?artifact_id=73351" class="bare">https://portal.opengeospatial.org/files/?artifact_id=73351</a> for installing the tool and related plugins)</p>
+<p>Edit file locally (for example with Atom editor tool, check "Recommended AsciiDoc Environment" on <a href="https://portal.opengeospatial.org/files/?artifact_id=73351" class="bare">https://portal.opengeospatial.org/files/?artifact_id=73351</a> for installing the tool and related plugins)</p>
 </li>
 <li>
 <p>Save file locally (still with the text editor)</p>
 </li>
 <li>
-<p>Commit locally (for example with github desktop)</p>
+<p>Commit locally (for example with GitHub desktop)</p>
 </li>
 <li>
-<p>Push to Fork (for example with github desktop)</p>
+<p>Push to Fork (for example with GitHub desktop)</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>&#8658; this will push your local changes to your own branch of the repository (<a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a>)</p>
+<p>&#8658; this will push your local changes to your own fork of the repository (<a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a>)</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_pulling_changes_from_your_branch"><a class="anchor" href="#_pulling_changes_from_your_branch"></a>9. Pulling changes from your branch</h2>
+<h2 id="_pulling_changes_from_your_fork"><a class="anchor" href="#_pulling_changes_from_your_fork"></a>9. Pulling changes from your fork</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>create a new pull request (from your own fork on github.com, for example <a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a>)</p>
+<p>create a new pull request (from your own fork on GitHub.com, for example <a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a>)</p>
 </li>
 </ul>
 </div>
@@ -401,7 +458,7 @@ Followings Atom packages are useful:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>once your pull request has been accepted by the DGIWG repo, you just need to synchronize your branch again with it by (with Github desktop for example)</p>
+<p>once your pull request has been accepted by the DGIWG repo, you just need to synchronize your fork again with it by (with GitHub desktop for example)</p>
 <div class="ulist">
 <ul>
 <li>
@@ -425,8 +482,8 @@ Followings Atom packages are useful:</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>How to create a new project?
-The easiest is to use the Github UI to create a new project.
-You can also use the command line.</p>
+The easiest is to use the GitHub UI to create a new project and then clone it.
+You can also use the command line (more info <a href="https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line">here</a>).</p>
 </div>
 </div>
 </div>
@@ -434,14 +491,14 @@ You can also use the command line.</p>
 <h2 id="_github_flow"><a class="anchor" href="#_github_flow"></a>11. GitHub Flow</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="http://1.bp.blogspot.com/-n8gwrM5Bf04/UfosDLuuDUI/AAAAAAAAKwg/2aE3V0NDk-g/s1600/git-and-github-workflow.png">Github Flow</a></p>
+<p><a href="http://1.bp.blogspot.com/-n8gwrM5Bf04/UfosDLuuDUI/AAAAAAAAKwg/2aE3V0NDk-g/s1600/git-and-GitHub-workflow.png">GitHub Flow</a></p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-01-21 09:03:28 +0100
+Last updated 2020-01-21 17:42:32 +0100
 </div>
 </div>
 </body>
