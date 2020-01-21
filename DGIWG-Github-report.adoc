@@ -106,7 +106,7 @@ image::./images/dgiwg_gitlab.png[dgiwg_gitlab,align=center]
 
 1. installed tools allow easy offline editing, contributions before meetings
 2. merging contributions is an easy step and is managed by github.com web site (pull requests). Differences (additions, deletions...) are highlighted, discussions during meetings or teleconferences becomes easier.
-3. managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is done as hen exchanging a word document between people/different Office version).
+3. managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is done as when exchanging a word document between people/different Office version or languages).
 NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with care leads to some mistakes, error references in some DGIWG published documents).
 
 4. using same technologies as OGC may also be an advantage for DGIWG when profiling OGC standards (of interest for Web services and upcoming OGC APIs). This also can been as an advantage for nations aiming at developing national profile based upon DGGIWG standards.
