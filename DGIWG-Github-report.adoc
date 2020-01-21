@@ -7,13 +7,13 @@
 
 :editor: Dimitri Sarafinof
 
-:workingGroup: DGIWg WSTP
+:workingGroup: DGIWG WSTP
 
-:category: DGIWG STD
+:category: DGIWG Technical Report
 :publicationDate: DD-MM-YYYY
 :approvalDate: DD-MM-YYYY
 :referenceURLID: ID
-:copyrightYear: 2018
+:copyrightYear: 2020
 //
 :titletext: {title}
 :doctype: book
@@ -29,7 +29,38 @@
 :bibtex-file: resources/bibtex-file.bib
 :bibtex-style: resources/lncs.csl
 
-= DGIWG GitHub report
+image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
+
+[.text-center]
+= {title}
+[#front_page,reftext='{table-caption}']
+[cols="25,85"]
+!===
+|Document type:	|Technical Report
+// subtype and profile of may be used for Standard
+
+|Document date:	|21 January 2020
+// The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details.
+|Edition number:	|0.1.0
+|Responsible Party: 	|DGIWG
+|Editor : | {editor}
+// The ‘Editor’ field is optional. The field is not used for documents that are cleared for public release._
+|Audience: 	|DGIWG participants and associates
+|Abstract: 	|This document describes the GitHub experimentation ran by DGIWG WSTP about using GitHub tools within the DGIWG specific standardization process.
+|Copyright:	|(C) Copyright DGIWG, some rights reserved  -  (CC) (By:) Attribution
+You are free:
+-	to copy, distribute, display, and perform/execute the work
+-	to make derivative works
+-	to make commercial use of the work
+Under the following conditions:
+-	(By:) Attribution. You must give the original author (DGIWG) credit.
+-	For any reuse or distribution, you must make clear to others the license terms of this work.
+Any of these conditions can be waived if you get permission from the copyright holder DGIWG.
+Your fair use and other rights are in no way affected by the above.
+This is a human-readable summary of the Legal Code (the full license is available from Creative Commons <http://creativecommons.org/licenses/by/2.0/ >).
+!===
+
+
 
 == Introduction
 
@@ -84,11 +115,7 @@ Contributions (with text editor Atom) have been made on each expert clone of the
 .GitHub comparison during the pull request process
 image::./images/pull_request.png[pull_request,align=center]
 
-Each of these two documents follow the previous defined template. command lines allow easy generation of PDF or HTML documents.
-
-WARNING: insert github workflow
-
-Draft documents have been generated to allow easier reading and commenting.
+Each of these two documents follow the previous defined template. Command lines allow easy generation of PDF or HTML documents (draft documents have been generated to allow easier reading and commenting).
 
 .DGIWG HTML rendering from the current draft template
 image::./images/html_output.png[html_output,align=center]
@@ -126,7 +153,7 @@ NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with
 6. *Start investigation of GitLab* in line with OGC process
 
 == Annex A
-.DGIWG simple flow for standard developpment under GitHub
+.DGIWG simple flow for standard development under GitHub
 image::./images/dgiwg_flow.png[dgiwg_flow,align=center]
 
 == Annex B
