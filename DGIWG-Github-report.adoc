@@ -117,11 +117,7 @@ Contributions (with text editor Atom) have been made on each expert clone of the
 .GitHub comparison during the pull request process
 image::./images/pull_request.png[pull_request,align=center]
 
-Each of these two documents follow the previous defined template. command lines allow easy generation of PDF or HTML documents.
-
-WARNING: insert github workflow
-
-Draft documents have been generated to allow easier reading and commenting.
+Each of these two documents follow the previous defined template. Command lines allow easy generation of PDF or HTML documents (draft documents have been generated to allow easier reading and commenting).
 
 .DGIWG HTML rendering from the current draft template
 image::./images/html_output.png[html_output,align=center]
@@ -159,7 +155,7 @@ NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with
 6. *Start investigation of GitLab* in line with OGC process
 
 == Annex A
-.DGIWG simple flow for standard developpment under GitHub
+.DGIWG simple flow for standard development under GitHub
 image::./images/dgiwg_flow.png[dgiwg_flow,align=center]
 
 == Annex B
