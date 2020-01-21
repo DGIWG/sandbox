@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.7">
+<title>DGIWG GitHub report</title>
+<link rel="stylesheet" href="resources/stylesheets/dgiwg.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>DGIWG GitHub report</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#_context">1.1. Context</a></li>
+<li><a href="#_aim">1.2. Aim</a></li>
+</ul>
+</li>
+<li><a href="#_experimentation_description">2. Experimentation description</a>
+<ul class="sectlevel2">
+<li><a href="#_github_setup">2.1. GitHub setup</a></li>
+<li><a href="#_tutorial">2.2. Tutorial</a></li>
+<li><a href="#_document_template">2.3. Document template</a></li>
+<li><a href="#_standard_development">2.4. Standard development</a></li>
+<li><a href="#_and_what_about_gitlab">2.5. and what about GitLab ?</a></li>
+</ul>
+</li>
+<li><a href="#_feedback">3. Feedback</a>
+<ul class="sectlevel2">
+<li><a href="#_advantages">3.1. Advantages</a></li>
+<li><a href="#_things_to_be_checked">3.2. Things to be checked</a></li>
+<li><a href="#_recommendations_and_way_forward">3.3. Recommendations and way forward</a></li>
+</ul>
+</li>
+<li><a href="#_annex_a">4. Annex A</a></li>
+<li><a href="#_annex_b">5. Annex B</a></li>
+<li><a href="#_working_with_github_dgiwg_how_to">Working with GitHub : DGIWG how to</a>
+<ul class="sectlevel1">
+<li><a href="#_introduction_to_github">6. Introduction to GitHub</a></li>
+<li><a href="#_required_tools">7. Required tools</a></li>
+<li><a href="#_working_on_an_existing_repository">8. Working on an existing repository</a></li>
+<li><a href="#_pulling_changes_from_your_branch">9. Pulling changes from your branch</a></li>
+<li><a href="#_working_on_a_new_project">10. Working on a new project</a></li>
+<li><a href="#_github_flow">11. GitHub Flow</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_context"><a class="anchor" href="#_context"></a>1.1. Context</h3>
+<div class="paragraph">
+<p>OGC is using GitHub tools for developing standards and testbeds reports. This process has several advantages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a unique gold copy of the document (and other resources like schemas)</p>
+</li>
+<li>
+<p>version control of the resources</p>
+</li>
+<li>
+<p>focus on the content and not on the look of the document (also avoid errors in references, text styles, numbering, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>easy contribution and merge of the comments/contributions with full traceability</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Associated to asciidoc text format, PDFs or HTMLs can be generated quite easily for document publication.</p>
+</div>
+<div class="paragraph">
+<p><em>PS : the NGA also develops its own profiles on Github (<a href="https://github.com/ngageoint/" class="bare">https://github.com/ngageoint/</a>).</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_aim"><a class="anchor" href="#_aim"></a>1.2. Aim</h3>
+<div class="paragraph">
+<p>DGIWG management team agreed on a one year experiment period for the P5-05 project (Web Processing Services). A DGIWG experimentation has then been run in 2019 to investigate use of GitHub tools for helping the process development of DGIWG standards.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_experimentation_description"><a class="anchor" href="#_experimentation_description"></a>2. Experimentation description</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_github_setup"><a class="anchor" href="#_github_setup"></a>2.1. GitHub setup</h3>
+<div class="paragraph">
+<p>DGIWG organization has been created on GitHub website <a href="https://github.com/DGIWG/" class="bare">https://github.com/DGIWG/</a>. This allows creation of open repositories for DGIWG projects. Concerning the DGIWG experiment, the WPS test has been run under <a href="https://github.com/DGIWG/P5.05-WPS" class="bare">https://github.com/DGIWG/P5.05-WPS</a>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/P5.05.png" alt="P5.05_repository">
+</div>
+<div class="title">Figure 1. DGIWG P5.05-WPS repository</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+the experiment has been run on a voluntary base; usual contributions/comments to the document have also been accepted during the process.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tutorial"><a class="anchor" href="#_tutorial"></a>2.2. Tutorial</h3>
+<div class="paragraph">
+<p>Git/GitHub tutorial has been created to present to the DGIWG WSTP experts and more globally to DGIWG members during side sessions and DGIWG TP plenary <a href="https://portal.dgiwg.org/files/?artifact_id=69392" class="bare">https://portal.dgiwg.org/files/?artifact_id=69392</a>.</p>
+</div>
+<div class="paragraph">
+<p>A test repository (sandbox) has been created to help volunteers to play with it before contributing to the project (<a href="https://github.com/DGIWG/sandbox" class="bare">https://github.com/DGIWG/sandbox</a>). A "step by step" GitHub document has also been created for this purpose (see Annex A); it also describes required and recommended tools to be used.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_document_template"><a class="anchor" href="#_document_template"></a>2.3. Document template</h3>
+<div class="paragraph">
+<p>First draft of DGIWG template document has been generated for testing purposes <a href="https://github.com/DGIWG/Management/tree/master/Templates" class="bare">https://github.com/DGIWG/Management/tree/master/Templates</a>. This template provides an empty standard document (AsciiDoc format) with same structure and close look and feel as current DGIWG word template for DGIWG standards.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/std_template.png" alt="std_template">
+</div>
+<div class="title">Figure 2. DGIWG AsciiDoc standard template</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_standard_development"><a class="anchor" href="#_standard_development"></a>2.4. Standard development</h3>
+<div class="paragraph">
+<p>P5.05 group has setup a dedicated repository <a href="https://github.com/DGIWG/P5.05-WPS" class="bare">https://github.com/DGIWG/P5.05-WPS</a> which contains two main subfolders for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a profile of WPS 2.0</p>
+</li>
+<li>
+<p>geospatial processes description (intervisibility, line of sight, routing, &#8230;&#8203;).</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/atom_edition.png" alt="atom_edition">
+</div>
+<div class="title">Figure 3. Edition of documents</div>
+</div>
+<div class="paragraph">
+<p>Contributions (with text editor Atom) have been made on each expert clone of the repository before submitting pull request to the DGIWG repository.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/pull_request.png" alt="pull_request">
+</div>
+<div class="title">Figure 4. GitHub comparison during the pull request process</div>
+</div>
+<div class="paragraph">
+<p>Each of these two documents follow the previous defined template. command lines allow easy generation of PDF or HTML documents.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+insert github workflow
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Draft documents have been generated to allow easier reading and commenting.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/html_output.png" alt="html_output">
+</div>
+<div class="title">Figure 5. DGIWG HTML rendering from the current draft template</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_and_what_about_gitlab"><a class="anchor" href="#_and_what_about_gitlab"></a>2.5. and what about GitLab ?</h3>
+<div class="paragraph">
+<p>GitLab is another Git-based repository, offering more or less the same functionalities as GitHub. One of the main difference is that GitLab private repositories are free (public repositories are charged), whereas GitHub offers the opposite (public is free, private is charged).
+OGC has then investigated use of GitLab and now (announced the 14th of January 2020) offers its own flavor on <a href="https://gitlab.ogc.org/" class="bare">https://gitlab.ogc.org/</a>. OGC procedure is simple, "<strong>Private Repos = GitLab  /  Public Repos = GitHub</strong>". the process development is the same.
+DGIWG P5 has created the DGIWG group under GitLab, but its use has not been investigated yet.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/dgiwg_gitlab.png" alt="dgiwg_gitlab">
+</div>
+<div class="title">Figure 6. DGIWG Group created under GitLab</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_feedback"><a class="anchor" href="#_feedback"></a>3. Feedback</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_advantages"><a class="anchor" href="#_advantages"></a>3.1. Advantages</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>installed tools allow easy offline editing, contributions before meetings</p>
+</li>
+<li>
+<p>merging contributions is an easy step and is managed by github.com web site (pull requests). Differences (additions, deletions&#8230;&#8203;) are highlighted, discussions during meetings or teleconferences becomes easier.</p>
+</li>
+<li>
+<p>managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is done as hen exchanging a word document between people/different Office version).
+NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with care leads to some mistakes, error references in some DGIWG published documents).</p>
+</li>
+<li>
+<p>using same technologies as OGC may also be an advantage for DGIWG when profiling OGC standards (of interest for Web services and upcoming OGC APIs). This also can been as an advantage for nations aiming at developing national profile based upon DGGIWG standards.</p>
+</li>
+<li>
+<p>becoming friendly with the tools and the DGIWG proposed workflow requires only a few hours.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_things_to_be_checked"><a class="anchor" href="#_things_to_be_checked"></a>3.2. Things to be checked</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Tools installation (see <a href="#Annex">[Annex]</a>)</p>
+</li>
+<li>
+<p>Access to <a href="https://github.com/" class="bare">https://github.com/</a> (only for specific tasks)</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_recommendations_and_way_forward"><a class="anchor" href="#_recommendations_and_way_forward"></a>3.3. Recommendations and way forward</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Continue P5.05 experiment</strong> and finalize it with GitHub tools</p>
+</li>
+<li>
+<p><strong>Finalize DGIGW documents template in asciidoc</strong> (+ CSS)</p>
+</li>
+<li>
+<p><strong>Review all resources</strong> to support using GitHub for DGIWG</p>
+</li>
+<li>
+<p><strong>Extend experiment to other DGIWG panel(s)</strong> (volunteers ?) to gather wider feedback</p>
+</li>
+<li>
+<p><strong>Setup management rights</strong> on <a href="https://github.com/DGIWG/" class="bare">https://github.com/DGIWG/</a></p>
+</li>
+<li>
+<p><strong>Start investigation of GitLab</strong> in line with OGC process</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_annex_a"><a class="anchor" href="#_annex_a"></a>4. Annex A</h2>
+<div class="sectionbody">
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/dgiwg_flow.png" alt="dgiwg_flow">
+</div>
+<div class="title">Figure 7. DGIWG simple flow for standard developpment under GitHub</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_annex_b"><a class="anchor" href="#_annex_b"></a>5. Annex B</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<h1 id="_working_with_github_dgiwg_how_to" class="sect0"><a class="anchor" href="#_working_with_github_dgiwg_how_to"></a>Working with GitHub : DGIWG how to</h1>
+<div class="sect1">
+<h2 id="_introduction_to_github"><a class="anchor" href="#_introduction_to_github"></a>6. Introduction to GitHub</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_required_tools"><a class="anchor" href="#_required_tools"></a>7. Required tools</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This chapter is inspirated from some OGC guidelines to develop OGC reports (<a href="https://portal.opengeospatial.org/files/?artifact_id=73351" class="bare">https://portal.opengeospatial.org/files/?artifact_id=73351</a>)</p>
+</div>
+<div class="paragraph">
+<p>A <strong>web browser</strong> is required to access <a href="https://github.com/" class="bare">https://github.com/</a> web site (account creation, forking repository &#8230;&#8203;)</p>
+</div>
+<div class="paragraph">
+<p><strong>GitHub desktop software</strong> is recommend to manage GitHub resources. It provides a graphic interface to clone, merge, pull&#8230;&#8203;resources). Git with command lines may also be used.</p>
+</div>
+<div class="paragraph">
+<p>A <strong>text editor</strong> is required to edit text locally;  Atom software is recommended, but other text editors may be used. Asciidoctor in combination of Atom is recommended for HTML and PDF generation.
+Followings Atom packages are useful:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>asciidoc-preview</p>
+</li>
+<li>
+<p>autocomplete-asciidoc</p>
+</li>
+<li>
+<p>language-asciidoc</p>
+</li>
+<li>
+<p>markdown-writer: requires changing of key-map to allow for keyboard shortcuts such as e.g. bold</p>
+</li>
+<li>
+<p>platformio-IDE-terminal</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This environment allows you to use keyboard shortcuts, autocomplete, syntax highlighting and a rendered preview for asciidoc; and provides you an terminal window within the editor to convert your asciidoc to html and pdf</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_working_on_an_existing_repository"><a class="anchor" href="#_working_on_an_existing_repository"></a>8. Working on an existing repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This first use case is useful when you want to collaborate to an existing project. That is the case for the DGIWG activity. In this case, the workflow is</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Go to the DGIWG project/repository you want to work on (for example <a href="https://github.com/DGIWG/sandbox" class="bare">https://github.com/DGIWG/sandbox</a>)</p>
+</li>
+<li>
+<p>Fork the project to your account, so you have your own version.</p>
+</li>
+<li>
+<p>Clone on your machine your version of the repository (your fork that looks like <a href="https://github.com/yourNames/sandbox" class="bare">https://github.com/yourNames/sandbox</a>). This may be done with github desktop tool.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#8658; this will create a copy of your repository on you local hard drive.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Edit file locally (for example with Atom editor tool, check "Recommended Asciidoc Environment" on <a href="https://portal.opengeospatial.org/files/?artifact_id=73351" class="bare">https://portal.opengeospatial.org/files/?artifact_id=73351</a> for installing the tool and related plugins)</p>
+</li>
+<li>
+<p>Save file locally (still with the text editor)</p>
+</li>
+<li>
+<p>Commit locally (for example with github desktop)</p>
+</li>
+<li>
+<p>Push to Fork (for example with github desktop)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#8658; this will push your local changes to your own branch of the repository (<a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a>)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pulling_changes_from_your_branch"><a class="anchor" href="#_pulling_changes_from_your_branch"></a>9. Pulling changes from your branch</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>create a new pull request (from your own fork on github.com, for example <a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#8658; this pull request has then to be discussed and accepted by admin of the DGIWG repo (<a href="https://github.com/DGIWG/sandbox" class="bare">https://github.com/DGIWG/sandbox</a>)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>once your pull request has been accepted by the DGIWG repo, you just need to synchronize your branch again with it by (with Github desktop for example)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>comparing your local copy to the DGIWG branch <a href="https://github.com/DGIWG/sandbox" class="bare">https://github.com/DGIWG/sandbox</a>)</p>
+</li>
+<li>
+<p>make a merge (this will update your local clone of your own repository), then your local Copy = the DGIWG online repo (<a href="https://github.com/DGIWG/sandbox" class="bare">https://github.com/DGIWG/sandbox</a>)</p>
+</li>
+<li>
+<p>push it to the origin (this will update your online copy <a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a>), then <a href="https://github.com/yourName/sandbox" class="bare">https://github.com/yourName/sandbox</a> = <a href="https://github.com/DGIWG/sandbox" class="bare">https://github.com/DGIWG/sandbox</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_working_on_a_new_project"><a class="anchor" href="#_working_on_a_new_project"></a>10. Working on a new project</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>How to create a new project?
+The easiest is to use the Github UI to create a new project.
+You can also use the command line.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github_flow"><a class="anchor" href="#_github_flow"></a>11. GitHub Flow</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://1.bp.blogspot.com/-n8gwrM5Bf04/UfosDLuuDUI/AAAAAAAAKwg/2aE3V0NDk-g/s1600/git-and-github-workflow.png">Github Flow</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-01-21 09:03:28 +0100
+</div>
+</div>
+</body>
+</html>
