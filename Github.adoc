@@ -6,13 +6,22 @@
 GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects.
 
 == Required tools
-This chapter is inspirated from some OGC guidelines to develop OGC reports (https://portal.opengeospatial.org/files/?artifact_id=73351)
+This chapter is inspirited from some OGC guidelines to develop OGC reports (https://portal.opengeospatial.org/files/?artifact_id=73351)
 
 A *web browser* is required to access https://github.com/ web site (account creation, forking repository ...)
 
-*GitHub desktop software* is recommend to manage GitHub resources. It provides a graphic interface to clone, merge, pull...resources). Git with command lines may also be used.
+_Online editing_
 
-A *text editor* is required to edit text locally;  Atom software is recommended, but other text editors may be used. Asciidoctor in combination of Atom is recommended for HTML and PDF generation.
+Online editing of asciidoc document is possible, directly with a web browser. This solution does not offer advance functionalities (visual preview, spellcheck...) that are available offline with dedicated tools.
+
+_Offline editing_
+
+*GitHub desktop software* is recommended to manage GitHub resources. It provides a graphic interface to clone, merge, pull...resources).
+
+[NOTE]
+Git command lines may also be used (without any graphic interface) to manage resources.
+
+A *text editor* is required to edit text locally (offline);  Atom software is recommended, but other text editors may be used. Asciidoctor in combination of Atom is recommended for HTML and PDF generation.
 Followings Atom packages are useful:
 
 - asciidoc-preview
@@ -23,7 +32,7 @@ Followings Atom packages are useful:
 
 This environment allows you to use keyboard shortcuts, autocomplete, syntax highlighting and a rendered preview for asciidoc; and provides you an terminal window within the editor to convert your asciidoc to html and pdf
 
-Although GitHub an be used anonymously, a GitHub user account is required to interact with the platform and to be able to fork repositories. GitHub is free for public repositories.
+Although GitHub can be used anonymously, a GitHub user account is required to interact with the platform and to be able to fork repositories. GitHub is free for public repositories.
 
 == Working on an existing repository
 This first use case is useful when you want to collaborate to an existing project. That is the case for the DGIWG activity. In this case, the workflow is
