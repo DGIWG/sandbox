@@ -3,7 +3,7 @@
 
 :title: DGIWG GitHub report
 
-:submissionDate: 21-01-2020
+:submissionDate: 27-01-2020
 
 :editor: Dimitri Sarafinof
 
@@ -39,9 +39,9 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 |Document type:	|Technical Report
 // subtype and profile of may be used for Standard
 
-|Document date:	|21 January 2020
+|Document date:	|27 January 2020
 // The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details.
-|Edition number:	|0.1.0
+|Edition number:	|0.1.1
 |Responsible Party: 	|DGIWG
 |Editor : | {editor}
 // The ‘Editor’ field is optional. The field is not used for documents that are cleared for public release._
@@ -60,8 +60,6 @@ Your fair use and other rights are in no way affected by the above.
 This is a human-readable summary of the Legal Code (the full license is available from Creative Commons <http://creativecommons.org/licenses/by/2.0/ >).
 !===
 
-
-
 == Introduction
 
 === Context
@@ -72,7 +70,7 @@ OGC is using GitHub tools for developing standards and testbeds reports. This pr
 - focus on the content and not on the look of the document (also avoid errors in references, text styles, numbering, ...)
 - easy contribution and merge of the comments/contributions with full traceability
 
-Associated to asciidoc text format, PDFs or HTMLs can be generated quite easily for document publication.
+Associated to asciidoc text format, PDFs or HTMLs can be generated quite easily for document publication (with recommended tools).
 
 _PS : the NGA also develops its own profiles on Github (https://github.com/ngageoint/)._
 
@@ -83,47 +81,57 @@ DGIWG management team agreed on a one year experiment period for the P5-05 proje
 == Experimentation description
 
 === GitHub setup
-DGIWG organization has been created on GitHub website https://github.com/DGIWG/. This allows creation of open repositories for DGIWG projects. Concerning the DGIWG experiment, the WPS test has been run under https://github.com/DGIWG/P5.05-WPS.
+DGIWG organization has been created on GitHub website https://github.com/DGIWG/. This allows creation of open repositories for DGIWG projects. For the DGIWG experiment, the DGIWG WPS profile  development has been run under https://github.com/DGIWG/P5.05-WPS.
 
 .DGIWG P5.05-WPS repository
 image::./images/P5.05.png[P5.05_repository,align=center]
 
-NOTE: the experiment has been run on a voluntary base; usual contributions/comments to the document have also been accepted during the process.
+NOTE: the GitHub experiment has been run on a voluntary base; usual contributions/comments to the document have also been accepted during the process.
 
 === Tutorial
-Git/GitHub tutorial has been created to present to the DGIWG WSTP experts and more globally to DGIWG members during side sessions and DGIWG TP plenary https://portal.dgiwg.org/files/?artifact_id=69392.
+A Git/GitHub tutorial has been created to be presented to the DGIWG WSTP experts and more globally to DGIWG members during side sessions and DGIWG TP plenary https://portal.dgiwg.org/files/?artifact_id=69392.
 
-A test repository (sandbox) has been created to help volunteers to play with it before contributing to the project (https://github.com/DGIWG/sandbox). A "step by step" GitHub document has also been created for this purpose (see Annex A); it also describes required and recommended tools to be used.
+A test repository (sandbox) has been created to help volunteers to play with it before contributing to the project (https://github.com/DGIWG/sandbox). A "step by step" GitHub document has also been created for this purpose (see Annex A); it also describes required and recommended tools to be used (such as Atom text editor, useful plugins, Asciidoctor ...)
 
 === Document template
-First draft of DGIWG template document has been generated for testing purposes https://github.com/DGIWG/Management/tree/master/Templates. This template provides an empty standard document (AsciiDoc format) with same structure and close look and feel as current DGIWG word template for DGIWG standards.
+A first draft of the DGIWG template document has been generated for GitHub testing purposes https://github.com/DGIWG/Management/tree/master/Templates. This template provides an empty DGIWG standard document (AsciiDoc format) with same structure and look and feel as the current DGIWG word template for DGIWG standards.
 
 .DGIWG AsciiDoc standard template
 image::./images/std_template.png[std_template,align=center]
 
 === Standard development
-P5.05 group has setup a dedicated repository https://github.com/DGIWG/P5.05-WPS which contains two main subfolders for:
+The P5.05 group has setup a dedicated repository https://github.com/DGIWG/P5.05-WPS which contains two main subfolders for:
 
 - a profile of WPS 2.0
 - geospatial processes description (intervisibility, line of sight, routing, ...).
 
-.Edition of documents
+Contributions (with text editor Atom) have been made on each expert clone of the repository before submitting pull request to the DGIWG repository. See workflow and tutorial in the <<_annex_a>>.
+
+[NOTE]
+Atom is a text editor that let experts edit the text locally on their computer (see figure below)
+
+.Edition of documents with Atom text editor and document preview
 image::./images/atom_edition.png[atom_edition,align=center]
 
-Contributions (with text editor Atom) have been made on each expert clone of the repository before submitting pull request to the DGIWG repository.
+Local editions are submitted by experts on the DGIWG GitHub (pull request mechanism); differences are highlighted and easy to discuss (see figure below).
 
 .GitHub comparison during the pull request process
 image::./images/pull_request.png[pull_request,align=center]
 
-Each of these two documents follow the previous defined template. Command lines allow easy generation of PDF or HTML documents (draft documents have been generated to allow easier reading and commenting).
+Each of these two documents follows the previous defined template. Command lines allow easy generation of PDF or HTML documents (draft documents have been generated to allow easier reading and commenting). This also can be done with a plugin of the Atom editor.
+
+.HTML generation from an AsciiDoc document with a command line
+----
+asciidoctor -r asciidoctor-bibtex -a linkcss -a stylesheet=dgiwg.css -a stylesdir=resources/stylesheets std.adoc
+----
 
 .DGIWG HTML rendering from the current draft template
 image::./images/html_output.png[html_output,align=center]
 
-=== and what about GitLab ?
-GitLab is another Git-based repository, offering more or less the same functionalities as GitHub. One of the main difference is that GitLab private repositories are free (public repositories are charged), whereas GitHub offers the opposite (public is free, private is charged).
-OGC has then investigated use of GitLab and now (announced the 14th of January 2020) offers its own flavor on https://gitlab.ogc.org/. OGC procedure is simple, "*Private Repos = GitLab  /  Public Repos = GitHub*". the process development is the same.
-DGIWG P5 has created the DGIWG group under GitLab, but its use has not been investigated yet.
+=== And what about GitLab ?
+GitLab is another Git-based repository, offering more or less the same functionalities as GitHub. One of the main differences is that GitLab private repositories are free (public repositories are charged), whereas GitHub offers the opposite (public is free, private is charged).
+OGC has then investigated the use of GitLab and now (announced the 14th of January 2020) offers its own flavor on https://gitlab.ogc.org/. OGC procedure is simple, "*Private Repos = GitLab  /  Public Repos = GitHub*". the process development is the same.
+DGIWG P5 has also created the DGIWG organization under GitLab, but has not investigated its usability yet.
 
 .DGIWG Group created under GitLab
 image::./images/dgiwg_gitlab.png[dgiwg_gitlab,align=center]
@@ -131,16 +139,28 @@ image::./images/dgiwg_gitlab.png[dgiwg_gitlab,align=center]
 == Feedback
 === Advantages
 
-1. installed tools allow easy offline editing, contributions before meetings
+1. publicly available and free tools allow easy offline editing and contributions between meetings
 2. merging contributions is an easy step and is managed by github.com web site (pull requests). Differences (additions, deletions...) are highlighted, discussions during meetings or teleconferences becomes easier.
-3. managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is done as when exchanging a word document between people/different Office version or languages).
-NOTE: the cleaning part of a DGIWG standard is a demanding task (which even with care leads to some mistakes, error references in some DGIWG published documents).
+3. managing references, tables and images is much easier (at least it is automatic based on a simple syntax and no error is introduced by exchanging a word document between people which use different Office versions or different language settings).
+NOTE: the final editing part of a DGIWG standard for publication as Word or PDF document is a demanding task (that even with most carefulness may lead to  mistakes or erroneous references in   published DGIWG documents).
 
-4. using same technologies as OGC may also be an advantage for DGIWG when profiling OGC standards (of interest for Web services and upcoming OGC APIs). This also can been as an advantage for nations aiming at developing national profile based upon DGGIWG standards.
+4. using the same technology and workflow as OGC may also be an advantage for DGIWG when profiling OGC standards. This is especially of interest for Web services and upcoming OGC APIs profiles, but can also be an advantage for nations aiming at developing national profiles based upon DGIWG standards.
 5. becoming friendly with the tools and the DGIWG proposed workflow requires only a few hours.
 
+=== Somme identified issues
+The proposal to use GitHub and contribute to a collaborative approach to developing DGIWG profiles and Standards, it is assumed that:
+
+1. the user has access to the Open Internet both to GitHub and GitHub download App plugin sites from a Military Network.
+2. the Network the user is working on does not have any JavaScript (transactional) restrictions.
+3. the User has Administrate Rights to install on their respective computer.
+4. the User does not have any restrictions of items such as the ‘Command Line Interface’.
+5. the Military network can interact with the GitHub/Lab and Local Machine Repo.
+
+[NOTE]
+These issues have been identified by GBR. Full analysis can be found in the document https://portal.dgiwg.org/files/?artifact_id=70084["Using GitHub on Defence Military Networks"].
+
 === Things to be checked
-1. Tools installation (see <<Annex>>)
+1. Tools installation (see <<_annex_b>>)
 2. Access to https://github.com/ (only for specific tasks)
 
 === Recommendations and way forward
