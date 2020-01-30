@@ -147,7 +147,7 @@ NOTE: the final editing part of a DGIWG standard for publication as Word or PDF 
 4. using the same technology and workflow as OGC may also be an advantage for DGIWG when profiling OGC standards. This is especially of interest for Web services and upcoming OGC APIs profiles, but can also be an advantage for nations aiming at developing national profiles based upon DGIWG standards.
 5. becoming friendly with the tools and the DGIWG proposed workflow requires only a few hours.
 
-=== Somme identified issues
+=== Some identified issues
 The proposal to use GitHub and contribute to a collaborative approach to developing DGIWG profiles and Standards, it is assumed that:
 
 1. the user has access to the Open Internet both to GitHub and GitHub download App plugin sites from a Military Network.
