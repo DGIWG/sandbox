@@ -3,7 +3,7 @@
 
 :title: DGIWG GitHub report
 
-:submissionDate: 27-01-2020
+:submissionDate: 03-02-2020
 
 :editor: Dimitri Sarafinof
 
@@ -26,6 +26,7 @@
 :source-highlighter: coderay
 // set media to output format print or screen for pdf export
 :media: print
+:icons: font
 :bibtex-file: resources/bibtex-file.bib
 :bibtex-style: resources/lncs.csl
 
@@ -39,9 +40,9 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 |Document type:	|Technical Report
 // subtype and profile of may be used for Standard
 
-|Document date:	|27 January 2020
+|Document date:	|3rd February 2020
 // The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details.
-|Edition number:	|0.1.1
+|Edition number:	|0.2.0
 |Responsible Party: 	|DGIWG
 |Editor : | {editor}
 // The ‘Editor’ field is optional. The field is not used for documents that are cleared for public release._
@@ -70,7 +71,7 @@ OGC is using GitHub tools for developing standards and testbeds reports. This pr
 - focus on the content and not on the look of the document (also avoid errors in references, text styles, numbering, ...)
 - easy contribution and merge of the comments/contributions with full traceability
 
-Associated to asciidoc text format, PDFs or HTMLs can be generated quite easily for document publication (with recommended tools).
+From asciidoc text format(.adoc), PDFs or HTMLs can be generated quite easily for document publication (with recommended tools).
 
 _PS : the NGA also develops its own profiles on Github (https://github.com/ngageoint/)._
 
@@ -159,6 +160,11 @@ The proposal to use GitHub and contribute to a collaborative approach to develop
 [NOTE]
 These issues have been identified by GBR. Full analysis can be found in the document https://portal.dgiwg.org/files/?artifact_id=70084["Using GitHub on Defence Military Networks"].
 
+=== Possible way forward
+Moving directly to a full GitHub process for developing DGIWG standards does not seems to be the better path now.
+Generating Word versions of the a.doc documents for people having no access to GitHub has been experienced for writing this report (and for P5.05). Word file may be generated easily from the HTML version. This allows then commenting and contributing from all experts (comments done via Word have to be re-inserted into the adoc file on GitHub by someone having access to it).
+
+
 === Things to be checked
 1. Tools installation (see <<_annex_b>>)
 2. Access to https://github.com/ (only for specific tasks)
@@ -166,11 +172,11 @@ These issues have been identified by GBR. Full analysis can be found in the docu
 === Recommendations and way forward
 
 1. *Continue P5.05 experiment* and finalize it with GitHub tools
-2. *Finalize DGIGW documents template in asciidoc* (+ CSS)
-3. *Review all resources* to support using GitHub for DGIWG
-4. *Extend experiment to other DGIWG panel(s)* (volunteers ?) to gather wider feedback
-5. *Setup management rights* on https://github.com/DGIWG/
-6. *Start investigation of GitLab* in line with OGC process
+2. *Start investigation of GitLab* in line with OGC process
+3. *Finalize DGIGW documents template in asciidoc* (+ CSS)
+4. *Review all resources* to support using GitHub/GitLab for DGIWG
+5. *Extend experiment to other DGIWG panel(s)* (volunteers ?) to gather wider feedback
+6. *Setup management rights* on https://github.com/DGIWG/
 
 == Annex A
 .DGIWG simple flow for standard development under GitHub
